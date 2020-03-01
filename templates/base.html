@@ -13,7 +13,19 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo">Oh Crumbs!<i class="material-icons prefix">restaurant</i></i></a>
+        <ul id="navbar" class="right hide-on-med-and-down navbar-fixed">
+          <li><a href="">About</a></li>
+          <li><a href="">New</a></li>
+          <li><a href="get_recipes">Recipes</a></li>
+          <i class="fab fa-facebook-square" a href="www.facebook.com/"></i>
+          <i class="fab fa-twitter" href="https://twitter.com/"></i>
+          <i class="fab fa-instagram" href="https://instagram.com/"></i>
+        </ul>
+      </div>
+    </nav>
 
     {% block content %}
     {% endblock %}
