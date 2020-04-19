@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-    {% for recipe in category %}
+<div class="container">
+    {% for item in recipe %}
 
-        {{ recipe.category_name }}
-        {{ recipe.add }}
-
+        {{ item.recipe_name }}
+        {{ item.prep_time }}
+</div>
     {% endfor %}
 {% endblock %}

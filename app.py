@@ -5,8 +5,8 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = 'recipe_manager'
-app.config["MONGO_URI"] = 'mongodb+srv://root:r00tdr956P@myfirstcluster-v3wwf.mongodb.net/recipe_manager?retryWrites=true&w=majority'
+app.config["MONGO_DBNAME"] = 'recipes'
+app.config["MONGO_URI"] = 'mongodb+srv://root:r00tdr956P@myfirstcluster-v3wwf.mongodb.net/recipes?retryWrites=true&w=majority'
 
 mongo = PyMongo(app)
 
@@ -14,7 +14,7 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/get_recipes')
 def get_recipes():
-    return render_template("recipes.html", category=mongo.db.category.find())
+    return render_template("recipes.html", recipe=mongo.db.recipe.find())
 
 
 if __name__ == '__main__':
