@@ -2,9 +2,18 @@
 {% block content %}
 <div class="container">
     {% for item in recipe %}
+    
+    <h2>{{ item.recipe_name }}</h2>
+    <p>prep: {{ item.prep_time }}</p>
+    <p>cooking time: {{ item.cook_time }}</p>
+    <p>ingredients: {{ item.ingredients }}</p>
+    <p>method: {{ item.method }}</p>
+    <p>allergens: {{ item.allergens }}</p>
+    <div class="row">
+        <a href="" class="waves-effect waves-light btn">Edit</a>
+        <a href="" class="waves-effect waves-light btn">Delete</a>
+    </div>
 
-        {{ item.recipe_name }}
-        {{ item.prep_time }}
-</div>
     {% endfor %}
+</div>
 {% endblock %}
