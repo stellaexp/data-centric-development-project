@@ -4,8 +4,56 @@
 <div class="container">
     <div class="row">
         <h2>Add recipe</h2>
-        <form action="" method="POST">
-
+        <form action="{{ url_for('add_recipe') }}" method="POST">
+            <div class="row">
+                <div class="input-field col s12 center">
+                    <input id="recipe_name" name="recipe_name" type="text" class="validate">
+                    <label>Recipe title</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="prep_time" name="prep_time" type="text" class="validate">
+                    <label>Prep time</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="cooking_time" name="cooking_time" type="text" class="validate">
+                    <label>Cooking time</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="ingredients" name="ingredients" class="validate materialize-textarea"></textarea>
+                    <label>Ingredients</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="method" name="method" class="validate materialize-textarea"></textarea>
+                    <label>Method</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <select id="allergens" name="allergens" placeholder="select" class="validate">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Dairy free" name="dairy_free">Dairy Free</option>
+                        <option value="Gluten free" name="gluten_free">Gluten Free</option>
+                        <option value="Egg free" name="egg_free">Egg Free</option>
+                        <option value="Nut free" name="nut_free">Nut Free</option>
+                    </select>
+                    <label>Allergens</label>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <button class="btn orange lighten-1" type="submit" name="action">
+                    Submit recipe
+                </button>
+            </div>
         </form>
     </div>
 </div>
