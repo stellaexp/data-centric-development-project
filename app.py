@@ -40,6 +40,11 @@ def get_recipes():
     return render_template("recipes.html", recipe=mongo.db.recipe.find())
 
 
+@app.route('/add_recipe')
+def add_recipe():
+    return render_template("addrecipe.html")
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
