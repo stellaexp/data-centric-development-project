@@ -5,8 +5,8 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = 'recipes'
-app.config["MONGO_URI"] = 'mongodb+srv://root:r00tdr956P@myfirstcluster-v3wwf.mongodb.net/recipes?retryWrites=true&w=majority'
+app.config["MONGO_DBNAME"] = 'cook_book'
+app.config["MONGO_URI"] = 'mongodb+srv://root:r00tdr956P@myfirstcluster-v3wwf.mongodb.net/cook_book?retryWrites=true&w=majority'
 
 app.secret_key = "randomstringneedstobechanged"
 
@@ -50,6 +50,18 @@ def insert_recipe():
     recipe = mongo.db.recipe
     recipe.insert_one(request.form.to_dict())
     return redirect(url_for('get_recipes'))
+
+
+@app.route('/edit_recipe/<recipe_id>')
+def edit_recipe(recipe_id):
+    one_recipe = mongo.db.recipe.find_one({"_id": ObjectId(recipe_id)})
+    return render_template('editrecipe.html', recipes=one_recipe)
+
+
+"""@app.route('/delete_recipe/<recipe_id>', methods=['GET'])
+def delete_recipe(recipe_id):
+    mongo.db.recipe.remove({"_id": ObjectId(recipe_id)})
+    return redirect(url_for('get_recipes'))"""
 
 
 if __name__ == '__main__':

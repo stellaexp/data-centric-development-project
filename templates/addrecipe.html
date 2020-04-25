@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <h2>Add recipe</h2>
-        <form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
+        <form action="{{ url_for('insert_recipe') }}"  method="POST" class="col s12">
             <div class="row">
                 <div class="input-field col s12 center">
                     <i class="material-icons prefix">edit</i>
@@ -18,8 +18,13 @@
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">access_time</i>
-                    <input id="cooking_time" name="cooking_time" type="text" class="validate">
-                    <label for="icon_cooking_time">Cooking time</label>
+                    <input id="cook_time" name="cook_time" type="text" class="validate">
+                    <label for="icon_cook_time">Cooking time</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">people_outline</i>
+                    <input id="serves" name="serves" type="text" class="validate">
+                    <label for="icon_serves">Serves</label>
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">restaurant_menu</i>
