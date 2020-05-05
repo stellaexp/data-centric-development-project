@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="container">
+    <h3>Edit Recipe</h3>
+        <form action="{{ url_for('update_recipe', recipe_id=item._id) }}" class="col s12" method="POST">
+                <div class="input-field col s12">
+                    <input id="recipe_name" name="recipe_name" type="text" class="validate" value="{{ item.recipe_name }}">
+                    <label for="icon_edit">Recipe title</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="prep_time" name="prep_time" type="text" class="validate" value="{{ item.prep_time}}">
+                    <label for="icon_access_alarm">Prep time</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="cook_time" name="cook_time" type="text" class="validate" value="{{ item.cook_time }}">
+                    <label for="icon_cooking_time">Cooking time</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="serves" name="serves" type="text" class="validate" value="{{ item.serves }}">
+                    <label for="icon_cooking_time">Serves</label>
+                </div>
+                <div class="input-field col s12">
+                     <input id="ingredients" name="ingredients" class="validate materialize-textarea" value="{{ item.ingredients}} ">
+                     <label for="textarea1">Ingredients</label>
+                </div>
+                <div class="input-field col s12">
+                     <input id="method" name="method" class="validate materialize-textarea" value="{{ item.method }}">
+                     <label for="textarea1">Method</label>
+                </div>
+                <div class="input-field col s12">
+                     <input id="allergens" name="allergens" class="validate materialize-textarea" value="{{ item.allergens}}">
+                     <label for="textarea1">Method</label>
+                </div>
+            <br>
+            <br>
+                <button class="btn orange lighten-1" type="submit" name="action">
+                    Submit recipe
+                </button>
+        </form>
+    </div>
+
+{% endblock %}
