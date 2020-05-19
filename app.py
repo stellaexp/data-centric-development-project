@@ -35,6 +35,11 @@ def welcome():
     return render_template("welcome.html", username=username)
 
 
+@app.route('/about_page')
+def about_page():
+    return render_template("about.html")
+
+
 @app.route('/get_recipes')
 def get_recipes():
     recipe = mongo.db.recipe.find()
