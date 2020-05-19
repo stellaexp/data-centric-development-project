@@ -40,10 +40,16 @@ def about_page():
     return render_template("about.html")
 
 
-@app.route('/get_recipes')
+"""@app.route('/get_recipes')
 def get_recipes():
     recipe = mongo.db.recipe.find()
-    return render_template("recipes.html", recipe=recipe)
+    return render_template("recipes.html", recipe=recipe)"""
+
+
+@app.route('/recipe_index')
+def recipe_index():
+    recipe = mongo.db.recipe.find()
+    return render_template("recipeindex.html", recipe=recipe)
 
 
 @app.route('/add_recipe')
