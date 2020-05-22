@@ -3,7 +3,7 @@
 
 <div class="container">
 
-    {% for item in recipe %}
+    {% for item in full_recipe %}
         <h2>{{item.recipe_name}}</h2>
         <p>prep: {{item.prep_time}}</p>
         <p>cooking time: {{item.cook_time}}</p>
@@ -11,11 +11,6 @@
         <p>ingredients: {{item.ingredients}}</p>
         <p>method: {{item.method}}</p>
         <p>allergens: {{item.allergens}}</p>
-
-        <div class="row">
-            <a href="{{url_for('delete_recipe', recipe_id=item._id)}}" class="waves-effect waves-light btn">Delete</a>
-            <a href="{{url_for('edit_recipe', recipe_id=item._id)}}" class="waves-effect waves-light btn">Edit</a>
-        </div>
 
     {% endfor %}
     
