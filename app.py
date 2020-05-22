@@ -54,8 +54,10 @@ def recipe_index():
 
 @app.route('/full_recipe/<recipe_id>')
 def full_recipe(recipe_id):
-    full_recipe = mongo.db.recipe.find_one({"_id": ObjectId(recipe_id)})
-    return render_template('fullrecipe.html', full_recipe=full_recipe)
+    full_recipe = mongo.db.recipe.find_one({'_id': ObjectId(recipe_id)})
+    text = full_recipe.ingredients.split('\n')
+    return render_template('fullrecipe.html', full_recipe=full_recipe,
+                           ingredients=text)
 
 
 @app.route('/add_recipe')
