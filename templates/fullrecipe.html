@@ -10,13 +10,19 @@
         <p>Cooking time: {{full_recipe.cook_time}}</p>
         <p>Serves: {{full_recipe.serves}}</p>
         <p>
-        {% for full_recipe.ingredients in text %}
-            Ingredients: {{ingredients}}
+        <ul>
+        {% for ingredient in ingredients %}
+        <li> {{ingredient}} </li>
         {% endfor %}
+        </ul>
         </p>
     </div>
     <div class="col s8">
-        <p>Method: {{full_recipe.method}}</p>
+        <ul>
+        {% for ingredient in ingredient %}
+        <li> {{ingredient}} </li>
+        {% endfor %}
+        </ul>
         <p>Allergens: {{full_recipe.allergens}}</p>
         <button class="btn orange lighten-1" type="submit" name="action">
             Edit recipe

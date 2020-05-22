@@ -3,3 +3,7 @@
     font-family: 'Cutive Mono', monospace;
     font-size: 24pt;
 }
+
+.icon-small {
+    font-size: 15px !important;
+}
