@@ -3,16 +3,19 @@
 
 <div class="container">
 
-    {% for item in full_recipe %}
-        <h2>{{item.recipe_name}}</h2>
-        <p>prep: {{item.prep_time}}</p>
-        <p>cooking time: {{item.cook_time}}</p>
-        <p>serves: {{item.serves}}
-        <p>ingredients: {{item.ingredients}}</p>
-        <p>method: {{item.method}}</p>
-        <p>allergens: {{item.allergens}}</p>
+    <form action="url_for('full_recipe', recipe_id=full_recipe._id)"  method="POST" class="col s12">
+        <h2>{{full_recipe.recipe_name}}</h2>
+        <p>prep: {{full_recipe.prep_time}}</p>
+        <p>cooking time: {{full_recipe.cook_time}}</p>
+        <p>serves: {{full_recipe.serves}}
+        <p>ingredients: {{full_recipe.ingredients}}</p>
+        <p>method: {{full_recipe.method}}</p>
+        <p>allergens: {{full_recipe.allergens}}</p>
+        <button class="btn orange lighten-1" type="submit" name="action">
+            Edit recipe
+        </button>
 
-    {% endfor %}
+    <form>
     
 </div>
 
