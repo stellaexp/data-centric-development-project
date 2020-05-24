@@ -4,6 +4,24 @@
     font-size: 24pt;
 }
 
+p {
+    font-family: 'Didact Gothic', sans-serif !important;
+}
+
 .icon-small {
     font-size: 15px !important;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.oc-login {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 24pt;
+}
+
+.oc-logo {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 16pt;
 }
