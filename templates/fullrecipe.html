@@ -3,19 +3,17 @@
 
 <div class="container">
 <h2>{{full_recipe.recipe_name}}</h2>
-<!--<form action="url_for('full_recipe', recipe_id=full_recipe._id)"  method="POST">-->
 <div class="row">
-    <div class="col s4">
+    <div class="col s4 ingredient-box">
         <p>Prep: {{full_recipe.prep_time}}</p>
         <p>Cooking time: {{full_recipe.cook_time}}</p>
         <p>Serves: {{full_recipe.serves}}</p>
-        <p>
         <ul>
+        <li>Ingredients:</li>
         {% for ingredient in ingredients %}
         <li> {{ingredient}} </li>
         {% endfor %}
         </ul>
-        </p>
     </div>
     <div class="col s8">
         <ul>
@@ -24,12 +22,8 @@
         {% endfor %}
         </ul>
         <p>Allergens: {{full_recipe.allergens}}</p>
-        <button class="btn orange lighten-1" type="submit" name="action">
-            Edit recipe
-        </button>
     </div>
 </div>
-<!--<form>-->
     
 </div>
 

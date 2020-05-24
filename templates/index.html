@@ -1,12 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
-            <div class="container">
+<div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h3 class="oc-login">Oh Crumbs!</h3>
+            </div>
+        </div>
+        <div class="row">
+                Enter your username to have access <br>to our mouth-watering recipes
+        </div>
+        <div id="form-container">
                 <form method="POST">
                     <div class="row">
                         <label for="username">Username:</label>
                         <input type="text" id="username" name="username">
-                        <button id="username-btn" class="btn waves-effect waves-light">Submit</button>
                     </div>
                 </form>
-            </div>
+</div>
 {% endblock %}
