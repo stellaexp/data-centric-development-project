@@ -2,29 +2,37 @@
 {% block content %}
 
 <div class="container">
-<h2>{{full_recipe.recipe_name}}</h2>
-<div class="row">
-    <div class="col s4 ingredient-box">
-        <p>Prep: {{full_recipe.prep_time}}</p>
-        <p>Cooking time: {{full_recipe.cook_time}}</p>
-        <p>Serves: {{full_recipe.serves}}</p>
-        <ul>
-        <li>Ingredients:</li>
-        {% for ingredient in ingredients %}
-        <li> {{ingredient}} </li>
-        {% endfor %}
-        </ul>
-    </div>
-    <div class="col s8">
-        <ul>
-        {% for ingredient in ingredient %}
-        <li> {{ingredient}} </li>
-        {% endfor %}
-        </ul>
-        <p>Allergens: {{full_recipe.allergens}}</p>
-    </div>
-</div>
-    
+    <h2>{{full_recipe.recipe_name}}</h2>
+        <div class="row">
+            <div class="col s4 ingredient-box">
+                <p>Prep: {{full_recipe.prep_time}}</p>
+                <p>Cooking time: {{full_recipe.cook_time}}</p>
+                <p>Serves: {{full_recipe.serves}}</p>
+                <ul class="ul-none">
+                <li>Ingredients:</li>
+                {% for ingredient in ingredients %}
+                <li> {{ingredient}} </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div class="col s8">
+                <div class="image-container">
+                    <img class="responsive-img" src="{{url_for('static', filename='images/pasta.jpg')}}">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <ul>
+                <li>Method:</li>
+                {% for ingredient in ingredient %}
+                <li> {{ingredient}} </li>
+                {% endfor %}
+                </ul>
+                <p>Allergens: {{full_recipe.allergens}}</p>
+            </div>
+        </div>
+        
 </div>
 
 {% endblock %}
