@@ -1,10 +1,10 @@
-.nav, .nav-wrapper {
+.nav, .nav-link, .nav-wrapper {
     background-color: #80ced7;
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Cutive Mono', monospace !important;
     font-size: 24pt;
 }
 
-p {
+h2, h3, p, .validate, li, form {
     font-family: 'Didact Gothic', sans-serif !important;
 }
 
@@ -16,6 +16,11 @@ p {
     margin-top: 50px;
 }
 
+.margin-top-bottom-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .oc-login {
     font-family: 'Cutive Mono', monospace;
     font-size: 24pt;
@@ -24,4 +29,9 @@ p {
 .oc-logo {
     font-family: 'Cutive Mono', monospace;
     font-size: 16pt;
+}
+
+.form-outline {
+    box-shadow: 0 5px 14px grey;
+    padding: 30px !important;
 }

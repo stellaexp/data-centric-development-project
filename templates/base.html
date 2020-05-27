@@ -20,9 +20,9 @@
       <div class="nav-wrapper">
         <a href="/" class="brand-logo">Oh Crumbs!<i class="material-icons prefix">restaurant</i></a>
         <ul id="navbar" class="right hide-on-med-and-down navbar-fixed">
-          <li><a href="{{url_for('about_page')}}">About</a></li>
-          <li><a href="{{url_for('add_recipe')}}">New</a></li>
-          <li><a href="{{url_for('recipe_index')}}">Recipes</a></li>
+          <li class="nav-link"><a href="{{url_for('about_page')}}">About</a></li>
+          <li class="nav-link"><a href="{{url_for('add_recipe')}}">New</a></li>
+          <li class="nav-link"><a href="{{url_for('recipe_index')}}">Recipes</a></li>
           <i class="fab fa-facebook-square" a href="www.facebook.com/"></i>
           <i class="fab fa-twitter" href="https://twitter.com/"></i>
           <i class="fab fa-instagram" href="https://instagram.com/"></i>
@@ -40,6 +40,7 @@
 <script>
 $(document).ready(function(){
     $('.slider').slider();
+    $('select').formSelect();
   });
 </script>
 </body>
