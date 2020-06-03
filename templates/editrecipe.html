@@ -27,20 +27,27 @@
                     </div>
                     <div class="input-field">
                         <i class="material-icons prefix">restaurant_menu</i>
-                        <textarea id="ingredients" name="ingredients" class="validate materialize-textarea" value="{{ item.ingredients}}" required></textarea>
-                        <label for="textarea1">Ingredients</label>
+                        <input id="ingredients" name="ingredients" class="validate materialize-textarea" value="{{ item.ingredients}}" required>
+                        <!--<label for="textarea1">Ingredients</label>-->
                     </div>
                     <div class="input-field">
                         <i class="material-icons prefix">restaurant</i>
-                         <textarea id="method" name="method" class="validate materialize-textarea" value="{{ item.method }}" required></textarea>
-                        <label for="textarea1">Method</label>
+                         <input id="method" name="method" class="validate materialize-textarea" value="{{ item.method }}" required>
+                        <!---<label for="textarea1">Method</label>-->
                     </div>
                     <div class="input-field">
-                        <i class="material-icons prefix">priority_high</i>
-                        <input type="checkbox" id="allergens" name="allergens" class="validate materialize-textarea" value="{{ item.allergens}}" required>
-                        <label for="textarea1">Allergens?</label>
+                      <select id="allergens" name="allergen_name" multiple>
+                        <option value="" disabled selected>Select</option>
+                        {% for allergen in allergens %}
+                            {% if allergen.allergen_name == item.allergen_name %}
+                                <option value="{{ allergen.allergen_name }}" selected>{{ allergen.allergen_name }}</option>
+                            {% else %}
+                                <option value="{{ allergen.allergen_name }}">{{ allergen.allergen_name }}</option>
+                            {% endif %}
+                        {% endfor %}
+                      </select>
                     </div>
-                    <button class="btn orange lighten-1" type="submit" name="action">
+                    <button class="btn btn btn-select margin-left-20" type="submit">
                         Submit recipe
                     </button>
             </form>

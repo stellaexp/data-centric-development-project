@@ -35,19 +35,21 @@
                         <textarea id="method" name="method" class="validate materialize-textarea" required></textarea>
                         <label for="textarea1">Method</label>
                     </div>
-                    <div class="input-field">
-                    <i class="material-icons prefix">priority_high</i>
-                    <label for="textarea1">Allergens</label>
-                        <select id="allergens" name="allergens" class="validate" required>
-                            <option value="">Allergens</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
+                    <div class="input-field col s12">
+                        <select id="allergens" name="allergen_name" multiple>
+                            <option value="" disabled selected>Select</option>
+                            {% for allergen in allergens %}
+                                <option value="{{ allergen.allergen_name }}">{{ allergen.allergen_name }}</option>
+                            {% endfor %}
                         </select>
+                        <label>Allergens</label>
                     </div>
-                    <button class="btn orange lighten-1" type="submit" name="action">
+                    <br>
+                    <div class="row">
+                    <button class="btn btn-select margin-left-20" type="submit">
                         Submit recipe
                     </button>
+                    </div>
             </form>
     </div>
 </div>

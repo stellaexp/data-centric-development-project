@@ -43,7 +43,8 @@ def about_page():
 @app.route('/get_recipes')
 def get_recipes():
     recipe = mongo.db.recipe.find()
-    return render_template("recipes.html", recipe=recipe)
+    allergens = mongo.db.allergens.find()
+    return render_template("recipes.html", recipe=recipe, allergens=allergens)
 
 
 @app.route('/recipe_index')
@@ -70,7 +71,8 @@ def full_recipe(recipe_id):
 
 @app.route('/add_recipe')
 def add_recipe():
-    return render_template("addrecipe.html")
+    return render_template("addrecipe.html", 
+                           allergens=mongo.db.allergens.find())
 
 
 @app.route('/insert_recipe', methods=['POST'])
@@ -83,21 +85,23 @@ def insert_recipe():
 @app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
     one_recipe = mongo.db.recipe.find_one({"_id": ObjectId(recipe_id)})
-    return render_template('editrecipe.html', item=one_recipe)
+    all_allergens = mongo.db.allergens.find()
+    return render_template('editrecipe.html', item=one_recipe,
+                           allergens=all_allergens)
 
 
 @app.route('/update_recipe/<recipe_id>', methods=['POST'])
 def update_recipe(recipe_id):
     recipe = mongo.db.recipe
-    recipe.update({'_id': ObjectId(recipe_id)}, {
+    recipe.update_one({'_id': ObjectId(recipe_id)}, {'$set': {
         'recipe_name': request.form['recipe_name'],
         'prep_time': request.form['prep_time'],
         'cook_time': request.form['cook_time'],
         'serves': request.form['serves'],
         'ingredients': request.form['ingredients'],
         'method': request.form['method'],
-        'allergens': request.form['allergens']
-    })
+        'allergen_name': request.form['allergen_name']
+        }})
     return redirect(url_for('get_recipes'))
 
 
