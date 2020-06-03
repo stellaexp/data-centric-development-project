@@ -1,7 +1,16 @@
-.nav, .nav-link, .nav-wrapper {
-    background-color: #80ced7;
+nav {
+    background-color: #80ced7 !important;
+}
+.nav-link {
     font-family: 'Cutive Mono', monospace !important;
     font-size: 24pt;
+}
+
+.nav-wrapper {
+    font-family: 'Cutive Mono', monospace !important;
+    font-size: 24pt;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h2, h3, p, .validate, li, form {
@@ -21,6 +30,10 @@ h2, h3, p, .validate, li, form {
     margin-bottom: 30px;
 }
 
+.margin-left-20 {
+    margin-left: 20px;
+}
+
 .oc-login {
     font-family: 'Cutive Mono', monospace;
     font-size: 24pt;
@@ -34,4 +47,12 @@ h2, h3, p, .validate, li, form {
 .form-outline {
     box-shadow: 0 5px 14px grey;
     padding: 30px !important;
+}
+
+.btn-select {
+    background-color: #3CB371;
+}
+
+.btn-select:hover {
+    background-color: #3CB371;
 }
