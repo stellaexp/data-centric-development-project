@@ -71,7 +71,7 @@ def full_recipe(recipe_id):
 
 @app.route('/add_recipe')
 def add_recipe():
-    return render_template("addrecipe.html", 
+    return render_template("addrecipe.html",
                            allergens=mongo.db.allergens.find())
 
 
@@ -86,6 +86,7 @@ def insert_recipe():
 def edit_recipe(recipe_id):
     one_recipe = mongo.db.recipe.find_one({"_id": ObjectId(recipe_id)})
     all_allergens = mongo.db.allergens.find()
+    all_allergens.update_one()
     return render_template('editrecipe.html', item=one_recipe,
                            allergens=all_allergens)
 
