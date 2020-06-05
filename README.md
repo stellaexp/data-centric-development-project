@@ -1,16 +1,22 @@
 # Your Project's Name
-My project for the Data Centric Development Project was to create an online recipe book, which I named 'Oh Crumbs!'. 
+My project for Code Institute's Data Centric Development Project was to create an online recipe book, which I named 'Oh Crumbs!'. 
 
 ## UX
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+I started the UX process by looking at recipe websites, namely BBC Good Food as it’s a very popular resource for home cooks. I noted what a user expects to see from a recipe, such as preparation, cooking time, amount of people served etc. I then focused on who my target audience was, I decided on ‘plant eaters’, so there would be no meat, fish, dairy or eggs on the site.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+My user story goes as follows:
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+As a plant-based eater, I want to have access to website that has recipes I can read, contribute new recipes, update if necessary and delete if I don’t think they fit the site.
+
+As a site owner, I want to provide a platform for users to read, collaborate and manage a variety of plant-based recipes.
+
+The website should be as intuitive as possible with clear points of interaction. Please find wireframes and mockups located in the ‘user research’ folder in the project.
 
 ## Features
-CRUD
+Create - allows user to input own recipes
+Read - users can browse a selection of recipes and look at individual
+Update - the edit page let's users update existing recipes
+Delete - recipes can be easily removed from the site
 
 ## Existing Features
 Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -20,7 +26,7 @@ For some/all of your features, you may choose to reference the specific project 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ## Features Left to Implement
-Another feature idea
+Each recipe needs to be assigned an individual image, denoting what the finished recipe looks like. There should be an upload buttton on both the add and edit recipe page, which allows the user to submit their own image.
 
 ## Technologies Used
 Aside from HTML, CSS and Javascript this project uses:
@@ -64,7 +70,7 @@ Separate git branch?
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
 ## Credits
-I'd like to thank the Tutor Support team at Code Institute who helped me with any issues I became particularly stuck on.
+I'd like to thank the Tutor Support team at Code Institute who pointed me in the right direction with any issues I became particularly stuck on.
 
 ## Content
 All recipes were taken from BBC Good Food, or otherwise from memory by myself.
