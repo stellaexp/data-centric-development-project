@@ -2,17 +2,33 @@
 {% block content %}
 
 <div class="container">
-<h3>Welcome {{ username }}</h3>
+    <h3>Welcome, {{ username }}</h3>
 
-    <div class="row">
-        <div class="col 12">
-
-        Hi, {{ username }}
+    <div class="row margin-top-50">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="{{url_for('static', filename='images/happy.jpg')}}">
+                </li>
+                <li>
+                    <img src="{{url_for('static', filename='images/pasta.jpg')}}">
+                </li>
+                <li>
+                    <img src="{{url_for('static', filename='images/hummus.jpg')}}">
+                </li>
+                <li>
+                    <img src="{{url_for('static', filename='images/mixed.jpg')}}">
+                </li>
+                <li>
+                    <img src="{{url_for('static', filename='images/summerrolls.jpg')}}">
+                </li>
+            </ul>
         </div>
     </div>
+
     <div class="row">
         <div class="col 12">
-            <a class="waves-effect waves-light btn" href="{{url_for('recipe_index')}}"> Go to recipes</a>
+            <span class="oc-logo">Oh Crumbs!</span> is an online recipe book. We focus entirely on plant-based foods and welcome you to contribute and manage recipes to help grow our community. <a href="{{url_for('recipe_index')}}"> Go to recipes</a>
         </div>
     </div>
 

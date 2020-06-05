@@ -1,4 +1,10 @@
-nav {
+.form {
+    /* How to center an element https://www.w3schools.com/css/css_align.asp */
+    margin: auto;
+    width: 60%;
+}
+
+nav, footer {
     background-color: #80ced7 !important;
 }
 .nav-link {
@@ -23,6 +29,14 @@ h2, h3, p, .validate, li, form {
 
 .icon-small {
     font-size: 15px !important;
+}
+
+.size-14 {
+    font-size: 0.875rem;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
 }
 
 .margin-top-50 {
@@ -53,10 +67,26 @@ h2, h3, p, .validate, li, form {
     padding: 30px !important;
 }
 
+.font-grey {
+    color: #9e9e9e;
+}
+
 .btn-select {
     background-color: #3CB371;
 }
 
 .btn-select:hover {
     background-color: #3CB371;
+}
+
+.page-footer {
+    margin-top: 125px;
+}
+
+.margin-right-5 {
+    margin-right: 5px;
+}
+
+.ul-none {
+    list-style-type: none;
 }

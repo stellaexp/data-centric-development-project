@@ -16,20 +16,17 @@
     <!-- Personalised stylesheet-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="/" class="brand-logo">Oh Crumbs!<i class="material-icons prefix">restaurant</i></a>
+        <a href="{{url_for('welcome')}}" class="brand-logo">Oh Crumbs!<i class="material-icons prefix">restaurant</i></a>
         <ul id="navbar" class="right hide-on-med-and-down navbar-fixed">
-          <li class="nav-link"><a href="{{url_for('about_page')}}">About</a></li>
-          <li class="nav-link"><a href="{{url_for('get_recipes')}}">List</a></li>
-          <li class="nav-link"><a href="{{url_for('add_recipe')}}">New</a></li>
           <li class="nav-link"><a href="{{url_for('recipe_index')}}">Recipes</a></li>
-          <i class="fab fa-facebook-square" a href="www.facebook.com/"></i>
-          <i class="fab fa-twitter" href="https://twitter.com/"></i>
-          <i class="fab fa-instagram" href="https://instagram.com/"></i>
+          <li class="nav-link"><a href="{{url_for('add_recipe')}}">New</a></li>
+          <li class="nav-link"><a href="{{url_for('get_recipes')}}">Manage</a></li>
+          <li class="nav-link"><a href="{{url_for('index')}}">Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -37,9 +34,18 @@
     {% block content %}
     {% endblock %}
 
+    <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container center-align">
+                <span class="margin-right-5">© 2020 Oh Crumbs!</span>
+                    <i class="fab fa-facebook-square" a href="www.facebook.com/"></i>
+                    <i class="fab fa-twitter" href="https://twitter.com/"></i>
+                    <i class="fab fa-instagram" href="https://instagram.com/"></i>
+            </div>
+          </div>
+    </footer>
+
 <!-- Compiled and minified JavaScript -->
-
-
 <script>
 $(document).ready(function(){
     $('.slider').slider();
