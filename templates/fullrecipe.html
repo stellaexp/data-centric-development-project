@@ -9,27 +9,29 @@
                 <p>Cooking time: {{full_recipe.cook_time}}</p>
                 <p>Serves: {{full_recipe.serves}}</p>
                 <ul class="ul-none">
-                <li>Ingredients:</li>
-                {% for ingredient in ingredients %}
-                <li> {{ingredient}} </li>
-                {% endfor %}
+                    <li>Ingredients:</li>
+                    {% for ingredient in ingredients %}
+                    <li> {{ingredient}} </li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="col s8">
                 <div class="image-container">
-                    <img class="responsive-img" src="{{url_for('static', filename='images/pasta.jpg')}}">
+                    <img class="responsive-img" src="{{url_for('static', filename='images/cutlery.jpg')}}">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col s12">
-                <ul>
-                <li>Method:</li>
-                {% for ingredient in ingredient %}
-                <li> {{ingredient}} </li>
-                {% endfor %}
+                <ul class="ul-none">
+                    <li>Method:</li>
+                    {% for ingredient in ingredient %}
+                    <li> {{ingredient}} </li>
+                    {% endfor %}
                 </ul>
-                <p>Allergens: {{full_recipe.allergens}}</p>
+                <ul class="ul-none">Possible Allergens:
+                    <li>{{ full_recipe.allergen_name }}</li>
+                </ul>
             </div>
         </div>
         

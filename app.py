@@ -65,8 +65,9 @@ def full_recipe(recipe_id):
     x = text.split(',')
     next = full_recipe['method']
     y = next.split('.')
+    allergens = mongo.db.allergens.find()
     return render_template('fullrecipe.html', full_recipe=full_recipe,
-                           ingredients=x, ingredient=y)
+                           ingredients=x, ingredient=y, allergens=allergens)
 
 
 @app.route('/add_recipe')
@@ -86,7 +87,6 @@ def insert_recipe():
 def edit_recipe(recipe_id):
     one_recipe = mongo.db.recipe.find_one({"_id": ObjectId(recipe_id)})
     all_allergens = mongo.db.allergens.find()
-    all_allergens.update_one()
     return render_template('editrecipe.html', item=one_recipe,
                            allergens=all_allergens)
 
@@ -101,7 +101,7 @@ def update_recipe(recipe_id):
         'serves': request.form['serves'],
         'ingredients': request.form['ingredients'],
         'method': request.form['method'],
-        'allergen_name': request.form['allergen_name']
+        'allergen_name':request.form['allergen_name']
         }})
     return redirect(url_for('get_recipes'))
 
