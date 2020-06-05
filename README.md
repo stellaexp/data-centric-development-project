@@ -1,7 +1,5 @@
 # Your Project's Name
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+My project for the Data Centric Development Project was to create an online recipe book, which I named 'Oh Crumbs!'. 
 
 ## UX
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
@@ -12,7 +10,7 @@ As a user type, I want to perform an action, so that I can achieve a goal.
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
 ## Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+CRUD
 
 ## Existing Features
 Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -25,7 +23,14 @@ In addition, you may also use this section to discuss plans for additional featu
 Another feature idea
 
 ## Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+Aside from HTML, CSS and Javascript this project uses:
+<ol>
+<li>Materialize</li>
+<li>Google Fonts</li>
+<li>jQuery</li>
+<li>Python + Flask</li>
+<li>MongoDB</li>
+</ol>
 
 ## JQuery
 The project uses JQuery to simplify DOM manipulation.
@@ -59,12 +64,13 @@ Separate git branch?
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
 ## Credits
+I'd like to thank the Tutor Support team at Code Institute who helped me with any issues I became particularly stuck on.
 
 ## Content
-The text for section Y was copied from the Wikipedia article Z
+All recipes were taken from BBC Good Food, or otherwise from memory by myself.
 
 ## Media
-The photos used in this site were obtained from ...
+The photos used in this site were obtained from https://unsplash.com/.
 
 ## Acknowledgements
-I received inspiration for this project from X
+I received inspiration for this project from BBC Good Food.
