@@ -1,5 +1,5 @@
 # Your Project's Name
-My project for Code Institute's Data Centric Development Project was to create an online recipe book, which I aptly named 'Oh Crumbs!'.
+My project for Code Institute's Data Centric Development Project was to create an online recipe book with CRUD functionality, which I aptly named 'Oh Crumbs!'.
 
 ## UX
 I started the UX process by looking at recipe websites, namely BBC Good Food as it’s a very popular resource for home cooks. I noted what a user expects to see from a recipe, such as preparation, cooking time, amount of people served etc. I then focused on who my target audience was, I decided on ‘plant eaters’, so there would be no meat, fish, dairy or eggs on the site.
@@ -10,7 +10,7 @@ As a plant-based eater, I want to have access to a website that has recipes I ca
 
 As a site owner, I want to provide a platform for users to read, collaborate and manage a variety of plant-based recipes.
 
-The website should be as intuitive as possible with clear points of interaction. Please find wireframes and mockups located in the ‘user research’ folder in the project.
+The website should be as intuitive as possible with clear points of interaction. Please find wireframes located in the ‘user research’ folder in the project.
 
 ## Features
 Create - allows user to input own recipes
@@ -30,25 +30,28 @@ Feature 4 - retrieve and edit recipes from db.
 Feature 5 - delete any recipes that aren't suitable. A modal is used to confirm deletion.
 
 ## Features Left to Implement
+Authenticated login - the project guidelines stated that authenticated login was not required. However, ff this project were to go live to the public, it would definitley require a username and encrypted password saved in the db to retrieve on each login. 
 
-Each recipe needs to be assigned an individual image, denoting what the finished recipe looks like. There should be an upload buttton on both the add and edit recipe page, which allows the user to submit their own image.
+Recipe image - each recipe needs to be assigned a relevant image, denoting what the finished recipe looks like. There should be an upload buttton on both the add and edit recipe page, which allows a user to submit their own image.
+
+Filter/sort functionality - users should be able to filter and sort the recipes based on their preferences.
 
 ## Technologies Used
 Aside from the standard front-end technologies HTML, CSS and Javascript, this project uses:
 <ol>
-<li>[Materialize] (https://flask.palletsprojects.com/en/1.1.x/)</li>
+<li>[Materialize](https://flask.palletsprojects.com/en/1.1.x/)</li>
 * Front-end CSS and JS library.
-<li>[Google Fonts] (https://fonts.google.com/)</li>
+<li>[Google Fonts](https://fonts.google.com/)</li>
 * For appealing typography.
-<li>[jQuery] (https://jquery.com/)</li>
+<li>[jQuery](https://jquery.com/)</li>
  * The project uses JQuery to simplify DOM manipulation.
-<li>[Python] (https://www.python.org/)</li>
+<li>[Python](https://www.python.org/)</li>
 * The backend programming language.
-<li>[Flask] (https://flask.palletsprojects.com/en/1.1.x/)</li>
+<li>[Flask](https://flask.palletsprojects.com/en/1.1.x/)</li>
 * Lightweight framework.
-<li>[Jinja] (https://jinja.palletsprojects.com/en/2.11.x/)</li>
+<li>[Jinja](https://jinja.palletsprojects.com/en/2.11.x/)</li>
 * Used for templating and looping.
-<li>[MongoDB] (https://www.mongodb.com/)</li>
+<li>[MongoDB](https://www.mongodb.com/)</li>
 * The database to store and retreive recipes from.
 </ol>
 
@@ -64,14 +67,7 @@ Aside from the standard front-end technologies HTML, CSS and Javascript, this pr
 
 
 ## Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+To deploy this project 
 
 ## Credits
 I'd like to thank the Tutor Support team at Code Institute who pointed me in the right direction with any issues I became particularly stuck on.
