@@ -1,5 +1,5 @@
-# Your Project's Name
-My project for Code Institute's Data Centric Development Project was to create an online recipe book with CRUD functionality, which I aptly named 'Oh Crumbs!'.
+# Dat centric Development Milestone Project
+My project for Code Institute's Data Centric Development milestone was to create an online recipe book with CRUD functionality, which I aptly named 'Oh Crumbs!'.
 
 ## UX
 I started the UX process by looking at recipe websites, namely BBC Good Food as it’s a very popular resource for home cooks. I noted what a user expects to see from a recipe, such as preparation, cooking time, amount of people served etc. I then focused on who my target audience was, I decided on ‘plant eaters’, so there would be no meat, fish, dairy or eggs on the site.
@@ -12,7 +12,12 @@ As a site owner, I want to provide a platform for users to read, collaborate and
 
 The website should be as intuitive as possible with clear points of interaction. Please find wireframes located in the ‘user research’ folder in the project.
 
+## Database schema
+
+The structure of the db w
+
 ## Features
+The main purpose of the project, as set out in the brief, was to demonstrate CRUD functionality.
 
 ## Existing Features
 * Feature 1 - login - user can 'login' and username is saved for the session.
@@ -35,43 +40,73 @@ The website should be as intuitive as possible with clear points of interaction.
 ## Technologies Used
 Aside from the standard front-end technologies HTML, CSS and Javascript, this project uses:
 
-[Balsamiq](https://balsamiq.com/)
-⋅⋅* Used to create low-fidelity wireframes.
-[Materialize](https://flask.palletsprojects.com/en/1.1.x/)
-⋅⋅* Front-end CSS and JS library.
-[Google Fonts](https://fonts.google.com/)
-⋅⋅*  For appealing typography.
-[jQuery](https://jquery.com/)
-⋅⋅*  The project uses JQuery to simplify DOM manipulation.
-[Python](https://www.python.org/)
-⋅⋅*  The backend programming language.
-[Flask](https://flask.palletsprojects.com/en/1.1.x/)
-⋅⋅* Python microframework.
-[Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
-⋅⋅* Used for templating and looping.
-[MongoDB](https://www.mongodb.com/)
-⋅⋅* The database to store and retreive recipes from.
+1.[Balsamiq](https://balsamiq.com/)
+* Used to create low-fidelity wireframes.
+2. [Materialize](https://flask.palletsprojects.com/en/1.1.x/)
+* Front-end CSS and JS library.
+3. [Google Fonts](https://fonts.google.com/)
+*  For appealing typography.
+4. [jQuery](https://jquery.com/)
+*  The project uses JQuery to simplify DOM manipulation.
+5. [Python](https://www.python.org/)
+*  The backend programming language.
+6. [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* Python microframework.
+7. [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+* Used for templating and looping.
+8. [MongoDB](https://www.mongodb.com/)
+* The database to store and retreive recipes from.
 
 ## Testing
 
-I decided to manually test the application. 
+I decided to manually test the application. Each page was tested on Chrome, Firefox and Safari, following the testing criteria
 
 1. Login page
-⋅⋅* The username sh
+* Form should take a username and a pseudo password field, which does not get saved.
+* The username should be stored in a session.
+* Link to about/welcome page
 
-This has also been tested on Chrome, Firefox, Safari, 
+2. About page
+* Username should be displayed on 'loggin in'.
+* Images should be automatically rotating order in carousel.
+* Link to recipe index should be working
+
+3. Recipe index
+* Recipes from the database should be displaying
+* Link to recipe working
+
+4. Add recipe
+* Form asks for validation for each field
+* Allergens list displaying correctly from database
+* Form submits correctly
+
+4. Edit recipe
+* Correct recipe for editing
+* Form asks for validation for each field
+* Allergens list displaying correctly from database
+* Form submits correctly
+
+5. Mange recipes
+* All recipes displaying
+* Link to edit button working
+* Modal for final deletion working
+
+6. Logout
+* Ends user session by returning to 'login' page
+
+This has also been tested on Chrome, Firefox, Safari and tested for defensive design on Chrome's responsive viewer.
 
 ## Deployment
 To deploy this project 
 
 ## Running the application locally
-Clone the repository via GitHub, cd into the repo and create a virtual environment. Once you're inside the virtual env, run this cmd;
+Clone the repository locally via GitHub, cd into the repo and create a virtual environment. Once you're inside the virtual env, run this command;
 
 `pip3 freeze --local > requirements.txt`
 
-Then
+To run the application locally use this command
 
-`flask run`
+`python3 run.py`
 
 ## Credits
 I'd like to thank the Tutor Support team at Code Institute who pointed me in the right direction with any issues I became particularly stuck on.
