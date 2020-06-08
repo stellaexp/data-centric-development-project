@@ -19,32 +19,37 @@ Update - the edit page let's users update existing recipes
 Delete - recipes can be easily removed from the site
 
 ## Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+Feature 1 - user can 'login' and username is saved for the session.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+Feature 2 - access to a directory of recipes that a user can select individually to read.
+
+Feature 3 - add recipe to the database.
+
+Feature 4 - retrieve and edit recipes from db.
+
+Feature 5 - delete any recipes that aren't suitable. A modal is used to confirm deletion.
 
 ## Features Left to Implement
+
 Each recipe needs to be assigned an individual image, denoting what the finished recipe looks like. There should be an upload buttton on both the add and edit recipe page, which allows the user to submit their own image.
 
 ## Technologies Used
 Aside from the standard front-end technologies HTML, CSS and Javascript, this project uses:
 <ol>
-<li>Materialize</li>
-* Front-end CSS and JS library
-<li>Google Fonts</li>
-* For appealing typography
-<li>jQuery</li>
+<li>[Materialize] (https://flask.palletsprojects.com/en/1.1.x/)</li>
+* Front-end CSS and JS library.
+<li>[Google Fonts] (https://fonts.google.com/)</li>
+* For appealing typography.
+<li>[jQuery] (https://jquery.com/)</li>
  * The project uses JQuery to simplify DOM manipulation.
-<li>Python</li>
-* The backend programming language
-<li>Flask</li>
-* For templating logic
-<li>Jinja</li>
-* Used for page structure and looping
-<li>MongoDB</li>
-* The database to store and retreive the recipes from
+<li>[Python] (https://www.python.org/)</li>
+* The backend programming language.
+<li>[Flask] (https://flask.palletsprojects.com/en/1.1.x/)</li>
+* Lightweight framework.
+<li>[Jinja] (https://jinja.palletsprojects.com/en/2.11.x/)</li>
+* Used for templating and looping.
+<li>[MongoDB] (https://www.mongodb.com/)</li>
+* The database to store and retreive recipes from.
 </ol>
 
 ## Manual Testing
@@ -72,7 +77,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 I'd like to thank the Tutor Support team at Code Institute who pointed me in the right direction with any issues I became particularly stuck on.
 
 ## Content
-All recipes were taken from BBC Good Food, or otherwise from memory by myself.
+All recipes were taken from BBC Good Food, or otherwise recollected from memory myself.
 
 ## Media
 The photos used in this site were obtained from https://unsplash.com/.
