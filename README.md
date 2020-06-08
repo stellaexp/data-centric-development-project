@@ -13,47 +13,42 @@ As a site owner, I want to provide a platform for users to read, collaborate and
 The website should be as intuitive as possible with clear points of interaction. Please find wireframes located in the ‘user research’ folder in the project.
 
 ## Features
-Create - allows user to input own recipes
-Read - users can browse a selection of recipes and look at individual
-Update - the edit page let's users update existing recipes
-Delete - recipes can be easily removed from the site
 
 ## Existing Features
-Feature 1 - user can 'login' and username is saved for the session.
+* Feature 1 - user can 'login' and username is saved for the session.
 
-Feature 2 - access to a directory of recipes that a user can select individually to read.
+* Feature 2 - access to a directory of recipes that a user can select individually to read.
 
-Feature 3 - add recipe to the database.
+* Feature 3 - add recipe to the database.
 
-Feature 4 - retrieve and edit recipes from db.
+* Feature 4 - retrieve and edit recipes from db.
 
-Feature 5 - delete any recipes that aren't suitable. A modal is used to confirm deletion.
+* Feature 5 - delete any recipes that aren't suitable. A modal is used to confirm deletion.
 
 ## Features Left to Implement
-Authenticated login - the project guidelines stated that authenticated login was not required. However, ff this project were to go live to the public, it would definitley require a username and encrypted password saved in the db to retrieve on each login. 
+* Authenticated login - the project guidelines stated that authenticated login was not required. However, if this project were to go live to the public, it would definitley require a username and encrypted password to be saved in the db, to be retrieved on each login. 
 
-Recipe image - each recipe needs to be assigned a relevant image, denoting what the finished recipe looks like. There should be an upload buttton on both the add and edit recipe page, which allows a user to submit their own image.
+* Recipe image - each recipe needs to be assigned a relevant image, denoting what the finished recipe looks like. There should be an upload buttton on both the add and edit recipe page, which allows a user to submit their own image.
 
-Filter/sort functionality - users should be able to filter and sort the recipes based on their preferences.
+* Filter/sort functionality - users should be able to filter and sort the recipes based on their preferences.
 
 ## Technologies Used
 Aside from the standard front-end technologies HTML, CSS and Javascript, this project uses:
-<ol>
-<li>[Materialize](https://flask.palletsprojects.com/en/1.1.x/)</li>
+
+- [Materialize](https://flask.palletsprojects.com/en/1.1.x/)
 * Front-end CSS and JS library.
-<li>[Google Fonts](https://fonts.google.com/)</li>
+- [Google Fonts](https://fonts.google.com/)
 * For appealing typography.
-<li>[jQuery](https://jquery.com/)</li>
+- [jQuery](https://jquery.com/)
  * The project uses JQuery to simplify DOM manipulation.
-<li>[Python](https://www.python.org/)</li>
+- [Python](https://www.python.org/)
 * The backend programming language.
-<li>[Flask](https://flask.palletsprojects.com/en/1.1.x/)</li>
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * Lightweight framework.
-<li>[Jinja](https://jinja.palletsprojects.com/en/2.11.x/)</li>
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
 * Used for templating and looping.
-<li>[MongoDB](https://www.mongodb.com/)</li>
+- [MongoDB](https://www.mongodb.com/)
 * The database to store and retreive recipes from.
-</ol>
 
 ## Manual Testing
 
@@ -79,4 +74,4 @@ All recipes were taken from BBC Good Food, or otherwise recollected from memory 
 The photos used in this site were obtained from https://unsplash.com/.
 
 ## Acknowledgements
-I received inspiration and recipes details for this project from BBC Good Food https://www.bbcgoodfood.com/.
+I received inspiration and recipes details for this project from BBC Good Food https://www.bbcgoodfood.com/. I also looked at a vegetarian recipe and resource website, Anna Jones http://annajones.co.uk/recipes.
