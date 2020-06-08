@@ -23,7 +23,7 @@ nav, footer {
     font-family: 'Cutive Mono', monospace !important;
 }
 
-h2, h3, p, .validate, li, form {
+h2, h3, p, .validate, li, form, .ul-none {
     font-family: 'Didact Gothic', sans-serif !important;
 }
 
