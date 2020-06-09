@@ -1,4 +1,4 @@
-# Dat centric Development Milestone Project
+# Data centric Development Milestone Project
 My project for Code Institute's Data Centric Development milestone was to create an online recipe book with CRUD functionality, which I aptly named 'Oh Crumbs!'.
 
 ## UX
@@ -16,7 +16,7 @@ The website should be as intuitive as possible with clear points of interaction.
 
 The structure of the data in MongoDB is as follows;
 
-`{
+```{
     "_id": {
         "$oid": "objectId"
     },
@@ -33,7 +33,7 @@ The structure of the data in MongoDB is as follows;
     "ingredients": "string",
     "method": "string",
     "allergen_name": "string"
-}`
+}```
 
 ## Features
 The main purpose of the project, as set out in the brief, was to demonstrate CRUD functionality.
@@ -86,14 +86,14 @@ I decided to manually test the application. Each page was tested on Chrome, Fire
 * Link to the about/welcome page.
 
 2. Navigation menu
-* Logo in top left corner should link to welcome/about page
-* Recipes redirects to full recipe index.
-* New redirects to 'Add recipe'.
-* Manage redirects to 'Manage Recipes' which is an overview of all recipes.
-* Logout returns user to the login page.
+* Logo in top left corner should link to welcome/about page.
+* 'Recipes' redirects to full recipe index.
+* 'New' redirects to 'Add recipe'.
+* 'Manage' redirects to 'Manage Recipes', which is an overview of all recipes.
+* 'Logout' returns user to the login page.
 
 2. About page
-* Username should be displayed on 'loggin in'.
+* Username should be displayed on 'logging in'.
 * Slides should be automatically looping through the carousel.
 * Link to recipe index should redirect user to 'Recipes'.
 
@@ -102,12 +102,12 @@ I decided to manually test the application. Each page was tested on Chrome, Fire
 * Link to recipe working.
 
 4. Add recipe
-* Form asks for validation for each field.
+* Form asks user to validate each field.
 * Allergens list displaying correctly from database.
 * Form submits correctly.
 
 4. Edit recipe
-* Correct recipe for editing.
+* Correct recipe retrieved from db for editing.
 * Form asks for validation for each field.
 * Allergens list displaying correctly from database.
 * Form submits correctly.
