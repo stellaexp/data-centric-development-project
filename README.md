@@ -16,7 +16,8 @@ The website should be as intuitive as possible with clear points of interaction.
 
 The structure of the data in MongoDB is as follows;
 
-```{
+```
+{
     "_id": {
         "$oid": "objectId"
     },
@@ -33,7 +34,8 @@ The structure of the data in MongoDB is as follows;
     "ingredients": "string",
     "method": "string",
     "allergen_name": "string"
-}`
+}
+```
 
 ## Features
 The main purpose of the project, as set out in the brief, was to demonstrate CRUD functionality.
