@@ -129,29 +129,29 @@ The application has also been tested for defensive design on Chrome's responsive
 This project has been deployed to Heroku and you can find a live demo of the site [here](https://data-centric-development-k.herokuapp.com/).
 
 ## Running the application locally
-To run this application locally, run
+To run this application locally, first you need to clone the repository.
 
 `git clone https://github.com/stellaexp/data-centric-development-project.git`
 
-then make sure you're in the current directory
+Then make sure you're in the current directory;
 
 `cd data-centric-development-project`
 
-Next create a virtual environment
+Next create a virtual environment;
 
 `python3 -m venv env`
 
-Then start running the virtual env
+Then start running the virtual env;
 
 `source env/bin/activate`
 
 Check you have python3 and pip3 installed. See [here](https://docs.python.org/3/installing/index.html) for further details.
 
-Install the requirements
+Install the requirements.
 
 `pip3 freeze --local > requirements.txt`
 
-To run the application locally use this command
+To run the application;
 
 `python3 run.py`
 
