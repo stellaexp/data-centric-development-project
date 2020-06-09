@@ -6,9 +6,9 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = 'cook_book'
-app.config["MONGO_URI"] = os.get.environ('COOKBOOK')
+app.config["MONGO_URI"] = os.environ.get('COOKBOOK')
 
-app.secret_key = os.get.environ('RANDOMSTRING')
+app.secret_key = os.environ.get('RANDOMSTRING')
 
 mongo = PyMongo(app)
 
@@ -96,7 +96,7 @@ def update_recipe(recipe_id):
         'serves': request.form['serves'],
         'ingredients': request.form['ingredients'],
         'method': request.form['method'],
-        'allergen_name':request.form['allergen_name']
+        'allergen_name': request.form['allergen_name']
         }})
     return redirect(url_for('get_recipes'))
 
