@@ -33,7 +33,7 @@ The structure of the data in MongoDB is as follows;
     "ingredients": "string",
     "method": "string",
     "allergen_name": "string"
-}
+}`
 
 ## Features
 The main purpose of the project, as set out in the brief, was to demonstrate CRUD functionality.
@@ -124,7 +124,7 @@ I decided to manually test the application. Each page was tested on Chrome, Fire
 The application has also been tested for defensive design on Chrome's responsive viewer, which includes Moto G4, Galaxy S5, Pixel 2, Pixel 2XL iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro.
 
 ## Deployment
-This project has been deployed to Heroku and you can find a live demo of the site [here]().
+This project has been deployed to Heroku and you can find a live demo of the site [here](https://data-centric-development-k.herokuapp.com/).
 
 ## Running the application locally
 Clone the repository locally via GitHub, cd into the repo and create a virtual environment. Once you're inside the virtual env, run this command;
