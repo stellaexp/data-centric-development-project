@@ -58,6 +58,8 @@ The main purpose of the project, as set out in the brief, was to demonstrate CRU
 
 * Filter/sort functionality - users should be able to filter and sort the recipes based on their preferences.
 
+* More than one allergen per recipe - as I followed the tutorial for adding a task, it only allows for one category per editing form. As recipes can contain multiple allergens, this feature still needs to be implemented.
+
 ## Technologies Used
 Aside from the standard front-end technologies HTML, CSS and JavaScript, this project uses:
 
