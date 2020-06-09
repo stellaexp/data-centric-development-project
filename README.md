@@ -61,7 +61,7 @@ The main purpose of the project, as set out in the brief, was to demonstrate CRU
 ## Technologies Used
 Aside from the standard front-end technologies HTML, CSS and JavaScript, this project uses:
 
-1.[Balsamiq](https://balsamiq.com/)
+1. [Balsamiq](https://balsamiq.com/)
 * Used to create low-fidelity wireframes.
 2. [Materialize](https://flask.palletsprojects.com/en/1.1.x/)
 * Front-end CSS and JS library.

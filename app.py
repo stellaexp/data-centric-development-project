@@ -6,9 +6,9 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = 'cook_book'
-app.config["MONGO_URI"] = 'mongodb+srv://root:r00tdr956P@myfirstcluster-v3wwf.mongodb.net/cook_book?retryWrites=true&w=majority'
+app.config["MONGO_URI"] = os.get.environ('COOKBOOK')
 
-app.secret_key = "randomstringneedstobechanged"
+app.secret_key = os.get.environ('RANDOMSTRING')
 
 mongo = PyMongo(app)
 
@@ -51,11 +51,6 @@ def get_recipes():
 def recipe_index():
     recipe = mongo.db.recipe.find()
     return render_template("recipeindex.html", recipe=recipe)
-
-
-"""@app.route('/view_full')
-def view_full():
-    return render_template("fullrecipe.html")"""
 
 
 @app.route('/full_recipe/<recipe_id>')
