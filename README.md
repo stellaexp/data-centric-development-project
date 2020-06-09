@@ -14,7 +14,26 @@ The website should be as intuitive as possible with clear points of interaction.
 
 ## Database schema
 
-The structure of the db w
+The structure of the data in MongoDB is as follows;
+
+`{
+    "_id": {
+        "$oid": "objectId"
+    },
+    "recipe_name": "string",
+    "prep_time": {
+        "$numberInt": "integer"
+    },
+    "cook_time": {
+        "$numberInt": "integer"
+    },
+    "serves": {
+        "$numberInt": "integer"
+    },
+    "ingredients": "string",
+    "method": "string",
+    "allergen_name": "string"
+}`
 
 ## Features
 The main purpose of the project, as set out in the brief, was to demonstrate CRUD functionality.
@@ -59,42 +78,49 @@ Aside from the standard front-end technologies HTML, CSS and Javascript, this pr
 
 ## Testing
 
-I decided to manually test the application. Each page was tested on Chrome, Firefox and Safari, following the testing criteria
+I decided to manually test the application. Each page was tested on Chrome, Firefox, Safari, Opera, Internet Explorer using the following the testing criteria;
 
 1. Login page
 * Form should take a username and a pseudo password field, which does not get saved.
 * The username should be stored in a session.
-* Link to about/welcome page
+* Link to the about/welcome page.
+
+2. Navigation menu
+* Logo in top left corner should link to welcome/about page
+* Recipes redirects to full recipe index.
+* New redirects to 'Add recipe'.
+* Manage redirects to 'Manage Recipes' which is an overview of all recipes.
+* Logout returns user to the login page.
 
 2. About page
 * Username should be displayed on 'loggin in'.
-* Images should be automatically rotating order in carousel.
-* Link to recipe index should be working
+* Slides should be automatically looping through the carousel.
+* Link to recipe index should redirect user to 'Recipes'.
 
 3. Recipe index
-* Recipes from the database should be displaying
-* Link to recipe working
+* Recipes from the database should be displaying in order of submission.
+* Link to recipe working.
 
 4. Add recipe
-* Form asks for validation for each field
-* Allergens list displaying correctly from database
-* Form submits correctly
+* Form asks for validation for each field.
+* Allergens list displaying correctly from database.
+* Form submits correctly.
 
 4. Edit recipe
-* Correct recipe for editing
-* Form asks for validation for each field
-* Allergens list displaying correctly from database
-* Form submits correctly
+* Correct recipe for editing.
+* Form asks for validation for each field.
+* Allergens list displaying correctly from database.
+* Form submits correctly.
 
 5. Mange recipes
-* All recipes displaying
-* Link to edit button working
-* Modal for final deletion working
+* All recipes displaying.
+* Link to edit button working.
+* Modal for final deletion working.
 
 6. Logout
-* Ends user session by returning to 'login' page
+* Ends user session by returning to 'login' page.
 
-This has also been tested on Chrome, Firefox, Safari and tested for defensive design on Chrome's responsive viewer.
+The application has also been tested for defensive design on Chrome's responsive viewer, which includes Moto G4, Galaxy S5, Pixel 2, Pixel 2XL iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro.
 
 ## Deployment
 To deploy this project 
