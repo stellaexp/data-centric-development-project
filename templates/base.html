@@ -22,6 +22,7 @@
     <nav>
       <div class="nav-wrapper">
         <a href="{{url_for('welcome')}}" class="brand-logo">Oh Crumbs!<i class="material-icons prefix">restaurant</i></a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="navbar" class="right hide-on-med-and-down navbar-fixed">
           <li class="nav-link"><a href="{{url_for('recipe_index')}}">Recipes</a></li>
           <li class="nav-link"><a href="{{url_for('add_recipe')}}">New</a></li>
@@ -30,6 +31,13 @@
         </ul>
       </div>
     </nav>
+
+    <ul class="sidenav" id="mobile-nav">
+        <li class="nav-link"><a href="{{url_for('recipe_index')}}">Recipes</a></li>
+        <li class="nav-link"><a href="{{url_for('add_recipe')}}">New</a></li>
+        <li class="nav-link"><a href="{{url_for('get_recipes')}}">Manage</a></li>
+        <li class="nav-link"><a href="{{url_for('index')}}">Logout</a></li>
+    </ul>
 
     {% block content %}
     {% endblock %}

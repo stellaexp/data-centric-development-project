@@ -4,9 +4,14 @@
     width: 60%;
 }
 
-nav, footer {
+nav, footer, .sidenav {
     background-color: #80ced7 !important;
 }
+
+.sidenav li > a {
+    color: white;
+}
+
 .nav-link {
     font-family: 'Cutive Mono', monospace !important;
     font-size: 24pt;
